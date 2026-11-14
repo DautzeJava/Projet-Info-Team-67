@@ -1,0 +1,44 @@
+[
+{
+"id":"gold_mine",
+"name":"GoldMine",
+"symbol":"G",
+"type":"producion",
+"price":10,
+"production":{"Gold":5},
+"consiumption":{},
+"max_count":10,
+"max_level":10,
+"requires":{}
+}
+]
+
+[
+    {
+"id":"dimond_mine",
+"name":"DimondMine",
+"symbol":"D",
+"type":"producion",
+"price":10,
+"production":{"Dimond":5},
+"consiumption":{},
+"max_count":10,
+"max_level":10,
+"requires":{}
+    }
+]
+
+[
+    {
+ "id":"mana_pump",
+"name":"ManaPump",
+"symbol":"M",
+"type":"producion",
+"price":10,
+"production":{"Mana":5},
+"consiumption":{},
+"max_count":10,
+"max_level":10,
+"requires":{}
+    }
+]
