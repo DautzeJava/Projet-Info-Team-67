@@ -1,0 +1,12 @@
+{
+"Name_of_Game": "" ,
+"Rows_map": 0,
+"Cols_map": 0,
+"Cols_villige": 0,
+"Final_boss_turn": 0,
+"Begining_resources": {
+    "Gold": 0,
+    "Dimonds": 0,
+    "Mana": 0
+  }
+}

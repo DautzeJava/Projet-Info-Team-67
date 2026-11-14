@@ -21,7 +21,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 -Ressources:
 -> Gold (Goblin, mines,....)
--> Mana
+-> Mana(elixir)
+-> Dimonds
 
 
 -Monster [HP, Level?, type of monster,]
