@@ -1,10 +1,15 @@
-from donnees import charger_config
-import map
+from donnees import load_config
+import map_game
 
-def initilize_game():
-    config = charger_config("")
+def initialize_game():
+    config = load_config("data/config.json")
 
-    map_game = create_map(
-        config["map_lenght"]
-        config["map_width"]
+    grid = map_game.create_map(
+        config["Map_lenght"],
+        config["Map_width"]
     )
+    map_game.display_map(grid)
+    return grid
+
+if __name__ == "__main__":
+    initialize_game()
