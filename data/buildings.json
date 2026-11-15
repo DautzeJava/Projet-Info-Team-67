@@ -10,11 +10,11 @@
 "max_count":10,
 "max_level":10,
 "requires":{}
-}
-]
+},
 
-[
-    {
+
+
+       {
 "id":"dimond_mine",
 "name":"DimondMine",
 "symbol":"D",
@@ -25,10 +25,10 @@
 "max_count":10,
 "max_level":10,
 "requires":{}
-    }
-]
+    },
+ 
 
-[
+
     {
  "id":"mana_pump",
 "name":"ManaPump",
