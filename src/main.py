@@ -16,7 +16,9 @@ def initialize_game():
     return grid
 
 
-def menu():
+
+
+def menu_init():
     while True:
         clear()
         print("Menu des options :")
@@ -52,7 +54,10 @@ def menu():
             exit()
         else:
             print("Option invalide : choisissez entre 1 et 4.\n")
-            time.sleep(1.2)
+            time.sleep(1)
+
+def main():
+    grid = menu_init()
 
 
-grid = menu()
+main()
