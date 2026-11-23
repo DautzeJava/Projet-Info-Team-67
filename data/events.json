@@ -1,0 +1,101 @@
+{
+  "waves": [
+    {
+      "turn": 3,
+      "monsters": {"goblin": 3}
+    },
+    {
+      "turn": 8,
+      "monsters": {"goblin": 3,"orc": 1}
+    },
+    {
+      "turn": 15,
+      "monsters": {"goblin": 3,"goblin_boss": 1
+      }
+    },
+    {
+      "turn": 20,
+      "monsters": {"orc": 2,"dark_mage": 2
+      }
+    },
+    {
+      "turn": 25,
+      "monsters": {"orc": 2,"orc_boss": 1
+      }
+    },
+    {
+      "turn": 30,
+      "monsters": {"elf": 3,"dark_mage": 2
+      }
+    },
+    {
+      "turn": 35,
+      "monsters": {
+        "dark_mage": 2,
+        "dark_mage_boss": 1
+      }
+    },
+    {
+      "turn": 42,
+      "monsters": {
+        "orc": 3,
+        "elf": 3,
+        "goblin": 3
+      }
+    },
+    {
+      "turn": 50,
+      "monsters": {
+        "elf": 2,
+        "elf_boss": 1
+      }
+    }
+  ],
+  "random_events": [
+    {
+      "id": "gold_rush",
+      "name": "Gold Rush",
+      "probability": 0.1,
+      "type": "gain",
+      "resource": "gold",
+      "amount": 50,
+      "description": "Merchants bring extra gold."
+    },
+    {
+      "id": "mana_surge",
+      "name": "Mana Surge",
+      "probability": 0.08,
+      "type": "gain",
+      "resource": "mana",
+      "amount": 30,
+      "description": "A magic wave fills your mana."
+    },
+    {
+      "id": "diamond_find",
+      "name": "Diamond Find",
+      "probability": 0.04,
+      "type": "gain",
+      "resource": "diamonds",
+      "amount": 1,
+      "description": "Miners find a diamond."
+    },
+    {
+      "id": "plague",
+      "name": "Plague",
+      "probability": 0.06,
+      "type": "loss",
+      "resource": "gold",
+      "amount": 40,
+      "description": "A sickness costs you gold."
+    },
+    {
+      "id": "earthquake",
+      "name": "Earthquake",
+      "probability": 0.05,
+      "type": "damage_wall",
+      "resource": "none",
+      "amount": 40,
+      "description": "The wall loses HP."
+    }
+  ]
+}
