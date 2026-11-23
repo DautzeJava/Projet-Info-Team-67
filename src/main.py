@@ -5,14 +5,27 @@ import time
 
 def initialize_game():
     config = load_config("data/config.json")
-
+    print("Texte d'introduction")
     grid = map_game.create_map()
     map_game.display_map(grid)
     return grid
 
-grid = initialize_game()
+
+def menu():
+    print("Menu des options :")
+    options = ["1 : Commencer une partie", "2 : Charger la dernière partie", "3 : Crédits"]
+    for option in options:
+        print(option)
+    compris = int(input("Entrez l'option : "))
+
+    if compris == 1:
+        return initialize_game()
+    elif compris == 2:
+        print("A dev")
+        menu()
+    elif compris == 3:
+        print("eee")
+        menu()
 
 
-time.sleep(2)
-
-map_game.update_map(grid, 2, 3, 'A')
+grid = menu()
