@@ -1,19 +1,17 @@
-from donnees import load__all
+import donnees
 import map_game
-import time
 import os
-
-
-def clear():
-    os.system("cls" if os.name == "nt" else "clear")
-
+import time
 
 def initialize_game():
-    config, buildings, monsters, events, highscore = donnees.load__all()
+    config, buildings, monsters, events, highscore = donnees.load_all()
     print("Texte d'introduction")
     grid = map_game.create_map()
     map_game.display_map(grid)
     return grid
+
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 
