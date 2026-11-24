@@ -10,45 +10,31 @@
     },
     {
       "turn": 15,
-      "monsters": {"goblin": 3,"goblin_boss": 1
-      }
+      "monsters": {"goblin": 3,"goblin_boss": 1}
     },
     {
       "turn": 20,
-      "monsters": {"orc": 2,"dark_mage": 2
-      }
+      "monsters": {"orc": 2,"dark_mage": 2}
     },
     {
       "turn": 25,
-      "monsters": {"orc": 2,"orc_boss": 1
-      }
+      "monsters": {"orc": 2,"orc_boss": 1}
     },
     {
       "turn": 30,
-      "monsters": {"elf": 3,"dark_mage": 2
-      }
+      "monsters": {"elf": 3,"dark_mage": 2}
     },
     {
       "turn": 35,
-      "monsters": {
-        "dark_mage": 2,
-        "dark_mage_boss": 1
-      }
+      "monsters": {"dark_mage": 2,"dark_mage_boss": 1}
     },
     {
       "turn": 42,
-      "monsters": {
-        "orc": 3,
-        "elf": 3,
-        "goblin": 3
-      }
+      "monsters": {"orc": 3,"elf": 3,"goblin": 3}
     },
     {
       "turn": 50,
-      "monsters": {
-        "elf": 2,
-        "elf_boss": 1
-      }
+      "monsters": {"elf": 2,"elf_boss": 1}
     }
   ],
   "random_events": [
@@ -97,5 +83,25 @@
       "amount": 40,
       "description": "The wall loses HP."
     }
-  ]
+  ],
+"endless_waves":{
+      "start_turn": "50",
+      "interval": "5",
+      "base_count": 4,
+      "extra_monster_per_wave": 1,
+      "monster_pool":[
+        "goblin",
+        "orc",
+        "dark_mage",
+        "elf"
+      ],
+      "boss_every_n_waves": 4,
+    "boss_pool": [
+      "goblin_boss",
+      "orc_boss",
+      "dark_mage_boss",
+      "elf_boss"
+    ],
+    "hp_multiplier_per_wave": 1.05
+  }
 }

@@ -1,7 +1,13 @@
 import json
 
-def load_config(file_path="data/config.json"):
-    f = open(file_path, encoding="utf-8")
-    config = json.load(f)
-    f.close()
-    return config
+def load_json(path):
+    with open(path,"r",enconding="utf-8") as f:
+        return json.load(f)
+
+def load__all():
+    buildings=load_json("data/buildings.json")["buildings"]
+    config = load_json("data/config.json")
+    events= load_json("data/events.json")
+    highscore=load_json("data/highscore.json")
+    monsters=load_json("data/monsters.json")["monsters"]
+    return config,buildings,monsters,events,highscore

@@ -1,4 +1,4 @@
-from donnees import load_config
+from donnees import load__all
 import map_game
 import time
 import os
@@ -9,7 +9,7 @@ def clear():
 
 
 def initialize_game():
-    config = load_config("data/config.json")
+    config, buildings, monsters, events, highscore = donnees.load__all()
     print("Texte d'introduction")
     grid = map_game.create_map()
     map_game.display_map(grid)

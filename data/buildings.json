@@ -1,106 +1,101 @@
-[
+
 {
-"id":"gold_mine",
-"name":"Gold Mine",
-"symbol":"$",
-"type":"producion",
-"zone":"village",
-"price":10,
-"production":{"Gold":5},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{}
-},
-
-
-       {
-"id":"dimond_mine",
-"name":"DimondMine",
-"symbol":"*",
-"type":"producion",
-"zone":"village",
-"price":10,
-"production":{"Dimond":5},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{}
-    },
- 
-
-
+  "buildings": [
     {
- "id":"mana_pump",
-"name":"ManaPump",
-"symbol":"M",
-"type":"producion",
-"price":10,
-"production":{"Mana":5},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{}
+      "id": "gold_mine",
+      "name": "Gold Mine",
+      "symbol": "$",
+      "type": "producion",
+      "zone": "village",
+      "price": 10,
+      "production": {"Gold": 5},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {}
     },
-
     {
-"id":"archer_tower",
-"name":"ArcherTower",
-"symbol":"A",
-"type":"defense",
-"zone":"monster_zone",
-"price":10,
-"production":{"Mana":5},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{}
+      "id": "dimond_mine",
+      "name": "DimondMine",
+      "symbol": "*",
+      "type": "producion",
+      "zone": "village",
+      "price": 10,
+      "production": {"Dimond": 5},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {}
     },
-
-     {
-"id":"wall",
-"name":"Wall",
-"symbol":"#",
-"type":"wall",
-"zone":"wall_column",
-"price":10,
-"production":{"Mana":5},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{}
-    },
-
- {
-"id":"trap",
-"name":"Trap",
-"symbol":"^",
-"type":"trap",
-"zone":"monster_zone",
-"price":5,
-"production":{},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{},
-"hp":1,
-"damage":20
-    },
-    
     {
-"id":"mage_tower",
-"name":"Mage Tower",
-"symbol":"T",
-"type":"defense",
-"zone":"monster_zone",
-"price":5,
-"production":{},
-"consiumption":{},
-"max_count":10,
-"max_level":10,
-"requires":{},
-"hp":10,
-"damage":20
+      "id": "mana_pump",
+      "name": "Mana Pump",
+      "symbol": "&",
+      "type": "producion",
+      "zone": "village",
+      "price": 10,
+      "production": {"Mana": 5},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {}
+    },
+    {
+      "id": "archer_tower",
+      "name": "ArcherTower",
+      "symbol": "A",
+      "type": "defense",
+      "zone": "monster_zone",
+      "price": 10,
+      "production": {"Mana": 5},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {}
+    },
+    {
+      "id": "wall",
+      "name": "Wall",
+      "symbol": "#",
+      "type": "wall",
+      "zone": "wall_column",
+      "price": 10,
+      "production": {"Mana": 5},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {}
+    },
+    {
+      "id": "trap",
+      "name": "Trap",
+      "symbol": "^",
+      "type": "trap",
+      "zone": "monster_zone",
+      "price": 5,
+      "production": {},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {},
+      "hp": 1,
+      "damage": 20
+    },
+    {
+      "id": "mage_tower",
+      "name": "Mage Tower",
+      "symbol": "T",
+      "type": "defense",
+      "zone": "monster_zone",
+      "price": 5,
+      "production": {},
+      "consiumption": {},
+      "max_count": 10,
+      "max_level": 10,
+      "requires": {},
+      "hp": 10,
+      "damage": 20
     }
+  ]
+}
 
-]

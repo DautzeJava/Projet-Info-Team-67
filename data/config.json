@@ -1,14 +1,56 @@
 {
-"Name_of_Game": "" ,
-"Rows_map": 0,
-"Cols_map": 0,
-"Cols_villige": 0,
-"Final_boss_turn": 0,
-"Begining_resources": {
-    "Gold": 0,
-    "Dimonds": 0,
-    "Mana": 0
+  "map": {
+    "width": 21,
+    "height": 8,
+    "village_last_column": 5,
+    "wall_column": 6,
+    "monster_start_column": 19
   },
-"Map_lenght":8,
-"Map_width":25
+  "wall_hp": 300,
+  "game_over": {
+    "condition": "wall_hp_zero"
+  },
+  "start_resources": {
+    "gold": 200,
+    "mana": 50,
+    "diamonds": 5
+  },
+  "income_per_turn": {
+    "gold": 5,
+    "mana": 2,
+    "diamonds": 0
+  },
+  "upgrade": {
+    "cost_multiplier": 1.5,
+    "bonus_multiplier": 1.5
+  },
+  "sell_refund_ratio": 0.5,
+  "menu": [
+    {
+      "key": "1",
+      "action": "build"
+    },
+    {
+      "key": "2",
+      "action": "upgrade"
+    },
+    {
+      "key": "3",
+      "action": "sell"
+    },
+    {
+      "key": "4",
+      "action": "show_resources"
+    },
+    {
+      "key": "5",
+      "action": "end_turn"
+    }
+  ],
+  "score": {
+    "per_turn_survived": 10,
+    "per_monster_killed": 5,
+    "per_boss_killed": 50
+  },
+  "high_score_file": "highscore.json"
 }
