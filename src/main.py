@@ -1,14 +1,32 @@
-import donnees
+import donnees 
 import map_game
 import os
 import time
 
 def initialize_game():
     config, buildings, monsters, events, highscore = donnees.load_all()
+    wall_hp=config["wall_hp"]
+    print("Wall HP : ", wall_hp)
+    gold=config["start_resources"]["gold"]
+    mana=config["start_resources"]["mana"]
+    diamonds=config["start_resources"]["diamonds"]
+
+    print("Gold : ", gold)
+    print("Mana : ", mana)
+    print("Diamonds : ", diamonds)
+
     print("Texte d'introduction")
     grid = map_game.create_map()
     map_game.display_map(grid)
-    return grid
+
+    for option in config["menu"]:
+        print(option["key"],"-",option["action"])
+    choice=input("Enter your choice :")
+    print("You chose : ", choice)
+    return grid,config, buildings, monsters, events, highscore
+    
+  
+
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -55,7 +73,7 @@ def menu_init():
             time.sleep(1)
 
 def main():
-    grid = menu_init()
+    game_data= menu_init()
 
 
 main()
