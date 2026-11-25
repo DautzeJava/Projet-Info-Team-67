@@ -1,4 +1,4 @@
-COLS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r" , "s", "t", "u"]
+COLS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u"]
 
 def create_map():
     return [
@@ -21,6 +21,14 @@ def display_map(grid):
         print(numero, " ", ligne)
         print()
 
-def update_map(grid, co_x, co_y, objet):
-    grid[co_x][co_y] = objet
+def update_map(grid, row_idx, col_idx, objet):
+    if not (0 <= row_idx < len(grid)) or not (0 <= col_idx < len(grid[0])):
+        print("Coordonnées hors de la carte.")
+        return False
+    if grid[row_idx][col_idx] != ".":
+        print(f"Case déjà occupée par '{grid[row_idx][col_idx]}'.")
+        return False
+
+    grid[row_idx][col_idx] = objet
     display_map(grid)
+    return True

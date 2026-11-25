@@ -1,79 +1,40 @@
-import donnees 
+# Dans main.py
+import donnees
 import map_game
 import os
 import time
-
-def initialize_game():
-    config, buildings, monsters, events, highscore = donnees.load_all()
-    wall_hp=config["wall_hp"]
-    print("Wall HP : ", wall_hp)
-    gold=config["start_resources"]["gold"]
-    mana=config["start_resources"]["mana"]
-    diamonds=config["start_resources"]["diamonds"]
-
-    print("Gold : ", gold)
-    print("Mana : ", mana)
-    print("Diamonds : ", diamonds)
-
-    print("Texte d'introduction")
-    grid = map_game.create_map()
-    map_game.display_map(grid)
-
-    for option in config["menu"]:
-        print(option["key"],"-",option["action"])
-    choice=input("Enter your choice :")
-    print("You chose : ", choice)
-    return grid,config, buildings, monsters, events, highscore
-    
-  
+import menu
 
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
+def initialize_game():
+    config, buildings, monsters, events, highscore = donnees.load_all()
+    grid = map_game.create_map()
+    map_game.display_map(grid)
+    return grid
 
-
-def menu_init():
-    while True:
-        clear()
-        print("Menu des options :")
-        options = [
-            "1 : Commencer une partie",
-            "2 : Charger la dernière partie",
-            "3 : Crédits",
-            "4 : Quitter le jeu",
-        ]
-        for option in options:
-            print(option)
-
-        try:
-            compris = int(input("Entrez l'option choisie : "))
-        except ValueError:
-            print("\nVeuillez entrer un chiffre valide (1 à 4).")
-            time.sleep(1.2)
-            continue
-
-        print("\n")
-
-        if compris == 1:
-            clear()
-            return initialize_game()
-        elif compris == 2:
-            print("A dev\n")
-            time.sleep(1.5)
-        elif compris == 3:
-            print("Equipe 67 : Félix Pastor et David Stefan Raducan\n")
-            input("Appuyez sur Entrée pour revenir au menu...")
-        elif compris == 4:
-            clear()
-            exit()
-        else:
-            print("Option invalide : choisissez entre 1 et 4.\n")
-            time.sleep(1)
 
 def main():
-    game_data= menu_init()
+    while True:
+        clear()
+        choix = menu.menu_init()
+
+        if choix == 1:
+            clear()
+            return initialize_game()
+        elif choix == 2:
+            print("\nA dev")
+            time.sleep(1.5)
+        elif choix == 3:
+            print("\nEquipe 67 : Félix Pastor et David Stefan Raducan")
+            input("\nAppuyez sur Entrée pour revenir au menu...")
+        elif choix == 4:
+            clear()
+            exit()
 
 
-main()
+if __name__ == "__main__":
+    main()
