@@ -1,6 +1,5 @@
 import json
 
-
 def load_json(path, default=None):
     with open(path, "r", encoding="utf-8") as f:
         content = f.read().strip()

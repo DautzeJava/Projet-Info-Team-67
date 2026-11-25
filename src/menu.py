@@ -1,4 +1,3 @@
-# Dans menu.py
 import time
 
 

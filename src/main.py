@@ -1,4 +1,3 @@
-# Dans main.py
 import donnees
 import map_game
 import os
@@ -36,5 +35,4 @@ def main():
             exit()
 
 
-if __name__ == "__main__":
-    main()
+main()
