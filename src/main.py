@@ -17,13 +17,15 @@ def initialize_game():
 
 
 def main():
+
+    print("Il était une fois dans une contrée lointaine")
+    input("Entrez quelque chose pour continuer :")
     game_running = False
     while True:
         clear()
         game_running = menu.menu_init(initialize_game, clear, game_running)
         while game_running:
             menu.menu_in_game(game_running, clear)
-
 
 
 main()
