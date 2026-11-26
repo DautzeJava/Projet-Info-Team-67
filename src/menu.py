@@ -3,6 +3,7 @@ import time
 
 def menu_init(initialize_game, clear, game_running=False):
     while True:
+        clear()
         print("\nMenu des options :")
         options = [
             "1 : Commencer une partie",
@@ -17,7 +18,7 @@ def menu_init(initialize_game, clear, game_running=False):
             choix = int(input("Entrez l'option choisie : "))
         except ValueError:
             print("\nVeuillez entrer un chiffre valide (1 à 4).")
-            time.sleep(1.2)
+            time.sleep(1)
             continue
 
         if choix == 1:
@@ -25,12 +26,10 @@ def menu_init(initialize_game, clear, game_running=False):
             return initialize_game()
         elif choix == 2:
             print("\nA dev")
-            time.sleep(1.5)
-            return game_running
+            time.sleep(1)
         elif choix == 3:
             print("\nEquipe 67 : Félix Pastor et David Stefan Raducan")
             input("\nAppuyez sur Entrée pour revenir au menu...")
-            return game_running
         elif choix == 4:
             clear()
             exit()
@@ -56,19 +55,19 @@ def menu_in_game(game_running, clear):
             choix = int(input("Entrez l'option choisie : "))
         except ValueError:
             print("\nVeuillez entrer un chiffre valide (1 à 4).")
-            time.sleep(1.2)
+            time.sleep(1)
             continue
                 
 
         if choix == 1:
             print("\nA dev")
-            time.sleep(1.5)
+            time.sleep(1)
         elif choix == 2:
             print("\nA dev")
-            time.sleep(1.5)
+            time.sleep(1)
         elif choix == 3:
             print("\nA dev")
-            time.sleep(1.5)
+            time.sleep(1)
         elif choix == 4:
             clear()
             exit()
