@@ -40,36 +40,42 @@ def menu_init(initialize_game, clear, game_running=False):
 
 
 def menu_in_game(game_running, clear):
-        while game_running:
-            print("\nMenu des options :")
-            options = [
-                "1 : Construire/Détruire un bâtiment",
-                "2 : Récolter une ressource",
-                "3 : Informations",
-                "4 : Quitter le jeu",
-            ]
-            for option in options:
-                print(option)
+    while game_running:
+        print("\nMenu des options :")
+        options = [
+            "1 : Construire/Détruire un bâtiment",
+            "2 : Récolter une ressource",
+            "3 : Informations",
+            "4 : Sauvgarder et quitter",
+            "5 : Quitter le jeu le jeu sans enregistrer",
+        ]
+        for option in options:
+            print(option)
 
-            try:
-                choix = int(input("Entrez l'option choisie : "))
-            except ValueError:
-                print("\nVeuillez entrer un chiffre valide (1 à 4).")
-                time.sleep(1.2)
-                continue
+        try:
+            choix = int(input("Entrez l'option choisie : "))
+        except ValueError:
+            print("\nVeuillez entrer un chiffre valide (1 à 4).")
+            time.sleep(1.2)
+            continue
+                
 
-            if choix == 1:
-                print("\nA dev")
-                time.sleep(1.5)
-            elif choix == 2:
-                print("\nA dev")
-                time.sleep(1.5)
-            elif choix == 3:
-                print("\nA dev")
-                time.sleep(1.5)
-            elif choix == 4:
-                clear()
-                exit()
-            else:
-                print("\nOption invalide : choisissez entre 1 et 4.")
-                time.sleep(1)
+        if choix == 1:
+            print("\nA dev")
+            time.sleep(1.5)
+        elif choix == 2:
+            print("\nA dev")
+            time.sleep(1.5)
+        elif choix == 3:
+            print("\nA dev")
+            time.sleep(1.5)
+        elif choix == 4:
+            clear()
+            exit()
+        elif choix == 5:
+            clear()
+            exit()
+        else:
+            print("\nOption invalide : choisissez entre 1 et 4.")
+            time.sleep(1)
+        break

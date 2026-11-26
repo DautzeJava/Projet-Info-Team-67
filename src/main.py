@@ -13,7 +13,7 @@ def initialize_game():
     grid = map_game.create_map()
     map_game.display_map(grid)
     game_running = True
-    return game_running
+    return game_running, grid
 
 
 def main():
@@ -23,8 +23,10 @@ def main():
     game_running = False
     while True:
         clear()
-        game_running = menu.menu_init(initialize_game, clear, game_running)
+        game_running, grid = menu.menu_init(initialize_game, clear, game_running)
         while game_running:
+            clear()
+            map_game.display_map(grid)
             menu.menu_in_game(game_running, clear)
 
 
