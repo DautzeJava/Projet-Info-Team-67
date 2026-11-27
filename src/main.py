@@ -28,5 +28,5 @@ def main():
         while game_running:
             clear()
             map_game.display_map(grid)
-            game_running=menu.menu_in_game(game_running, clear)
+            menu.menu_in_game(game_running, clear)
 main()

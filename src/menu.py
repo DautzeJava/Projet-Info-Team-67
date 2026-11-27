@@ -54,7 +54,7 @@ def menu_in_game(game_running, clear):
         try:
             choix = int(input("Entrez l'option choisie : "))
         except ValueError:
-            print("\nVeuillez entrer un chiffre valide (1 à 4).")
+            print("\nVeuillez entrer un chiffre valide (1 à 5).")
             time.sleep(1)
             continue
                 
@@ -75,6 +75,6 @@ def menu_in_game(game_running, clear):
             clear()
             exit()
         else:
-            print("\nOption invalide : choisissez entre 1 et 4.")
+            print("\nOption invalide : choisissez entre 1 et 5.")
             time.sleep(1)
         break
