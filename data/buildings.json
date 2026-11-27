@@ -62,7 +62,7 @@
     {
       "id": "wall",
       "name": "Wall",
-      "symbol": "#",
+      "symbol": "|",
       "type": "wall",
       "zone": "wall_column",
       "price": 10,
