@@ -5,40 +5,43 @@
       "id": "gold_mine",
       "name": "Gold Mine",
       "symbol": "$",
-      "type": "producion",
+      "type": "production",
       "zone": "village",
       "price": 10,
-      "production": {"Gold": 5},
-      "consiumption": {},
+      "production": {"gold": 5},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
-      "requires": {}
+      "requires": {},
+      "hp": 30
     },
     {
-      "id": "dimond_mine",
-      "name": "DimondMine",
+      "id": "diamond_mine",
+      "name": "Diamond Mine",
       "symbol": "*",
-      "type": "producion",
+      "type": "production",
       "zone": "village",
       "price": 10,
-      "production": {"Dimond": 5},
-      "consiumption": {},
+      "production": {"diamonds": 5},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
-      "requires": {}
+      "requires": {},
+      "hp": 30
     },
     {
       "id": "mana_pump",
       "name": "Mana Pump",
       "symbol": "&",
-      "type": "producion",
+      "type": "production",
       "zone": "village",
       "price": 10,
-      "production": {"Mana": 5},
-      "consiumption": {},
+      "production": {"mana": 5},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
-      "requires": {}
+      "requires": {},
+      "hp": 30
     },
     {
       "id": "archer_tower",
@@ -47,11 +50,14 @@
       "type": "defense",
       "zone": "monster_zone",
       "price": 10,
-      "production": {"Mana": 5},
-      "consiumption": {},
+      "production": {},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
-      "requires": {}
+      "requires": {},
+      "damage": 8,
+      "range": 5,
+      "hp": 10
     },
     {
       "id": "wall",
@@ -60,11 +66,12 @@
       "type": "wall",
       "zone": "wall_column",
       "price": 10,
-      "production": {"Mana": 5},
-      "consiumption": {},
+      "production": {},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
-      "requires": {}
+      "requires": {},
+      "hp": 100
     },
     {
       "id": "trap",
@@ -74,7 +81,7 @@
       "zone": "monster_zone",
       "price": 5,
       "production": {},
-      "consiumption": {},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
       "requires": {},
@@ -89,12 +96,13 @@
       "zone": "monster_zone",
       "price": 5,
       "production": {},
-      "consiumption": {},
+      "consumption": {},
       "max_count": 10,
       "max_level": 10,
       "requires": {},
       "hp": 10,
-      "damage": 20
+      "damage": 20,
+      "range": 6
     }
   ]
 }

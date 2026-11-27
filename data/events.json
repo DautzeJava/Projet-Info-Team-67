@@ -85,8 +85,8 @@
     }
   ],
 "endless_waves":{
-      "start_turn": "50",
-      "interval": "5",
+      "start_turn": 50,
+      "interval": 5,
       "base_count": 4,
       "extra_monster_per_wave": 1,
       "monster_pool":[

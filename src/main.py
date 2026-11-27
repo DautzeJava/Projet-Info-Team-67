@@ -10,6 +10,7 @@ def clear():
 
 def initialize_game():
     config, buildings, monsters, events, highscore = donnees.load_all()
+    game = {"config": config, "buildings": buildings, "monsters": monsters, "events": events, "highscore": highscore}
     grid = map_game.create_map()
     map_game.display_map(grid)
     game_running = True
@@ -27,7 +28,5 @@ def main():
         while game_running:
             clear()
             map_game.display_map(grid)
-            menu.menu_in_game(game_running, clear)
-
-
+            game_running=menu.menu_in_game(game_running, clear)
 main()
