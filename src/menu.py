@@ -45,8 +45,9 @@ def menu_in_game(game_running, clear):
             "1 : Construire/Détruire un bâtiment",
             "2 : Récolter une ressource",
             "3 : Informations",
-            "4 : Sauvgarder et quitter",
-            "5 : Quitter le jeu le jeu sans enregistrer",
+            "4 : Terminer le tour",
+            "5 : Sauvgarder et quitter",
+            "6 : Quitter le jeu le jeu sans enregistrer",
         ]
         for option in options:
             print(option)
@@ -54,7 +55,7 @@ def menu_in_game(game_running, clear):
         try:
             choix = int(input("Entrez l'option choisie : "))
         except ValueError:
-            print("\nVeuillez entrer un chiffre valide (1 à 5).")
+            print("\nVeuillez entrer un chiffre valide (1 à 6).")
             time.sleep(1)
             continue
                 
@@ -69,12 +70,15 @@ def menu_in_game(game_running, clear):
             print("\nA dev")
             time.sleep(1)
         elif choix == 4:
-            clear()
-            exit()
+            print(f"\n vous passez au prochaine tour (tour [a modif])")
+            time.sleep(1)
         elif choix == 5:
             clear()
             exit()
+        elif choix == 6:
+            clear()
+            exit()
         else:
-            print("\nOption invalide : choisissez entre 1 et 5.")
+            print("\nOption invalide : choisissez entre 1 et 6.")
             time.sleep(1)
         break
